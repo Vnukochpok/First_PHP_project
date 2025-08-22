@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Главная страница</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+    $title = "Главная страница";
+    require("blocks/header.php");
+?>
+
+
+<?php
+require("blocks/footer.php");
+?>

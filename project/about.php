@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Информация о сайте</title>
-</head>
-<body>
+<?php
+    $title = "Информация о сайте";
+    require("blocks/header.php");
+
+?>
     <p align="center"; style="font-size: 30px">Данный сайт создан для обучения</p>
 
     <br>
@@ -22,5 +20,6 @@
     <p>Смешная собака - Джеся</p>
 
     <img src="img/djesya.jpg" width="325" height="475" alt="Джеся">
-</body>
-</html>
+<?php
+require("blocks/footer.php");
+?>

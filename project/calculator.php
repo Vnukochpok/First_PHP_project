@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>Калькулятор</title>
-</head>
-<body>
-    <div class="container mt-2">
+<?php
+    $title = "Калькулятор";
+    require("blocks/header.php");
+?>
     <h1>Калькулятор</h1>
     <form action="check_calc.php" method="post">
         <input type="number1" name="first" placeholder="Введите первое число" class="form-control">
@@ -21,5 +17,6 @@
     </form>
 </div>
     
-</body>
-</html>
+<?php
+require("blocks/footer.php");
+?>

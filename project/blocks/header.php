@@ -9,4 +9,5 @@
     <a href="calculator.php">Калькулятор</a>
     <a href="about.php">Информация о сайте</a>
     <a href="registration.php">Зарегистрироваться на сайте</a>
+    <a href="lk.php">Войти в личный кабинет</a>
     

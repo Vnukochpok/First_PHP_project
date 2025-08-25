@@ -12,8 +12,11 @@ $password = $_POST["password"];
 $email = $_POST["email"];
 $about = $_POST["about"];
 
+//добавление пользователя
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 $sql = "INSERT INTO users (name, surname, password, email, about)
-        VALUES('$name','$surname','$password', '$email','$about')";
+        VALUES('$name','$surname','$hashed_password', '$email','$about')";
+
 if(strlen($name) < 2){
     echo "Введите настоящее имя";
     echo '<a href="registration.php">Зарегистрироваться на сайте</a>';

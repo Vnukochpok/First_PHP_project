@@ -17,10 +17,10 @@ $login_qu_res=mysqli_query($conn, $login_qu);
 if (/*подсчет строк в ответе*/mysqli_num_rows($login_qu_res) == 1) {
     $user = mysqli_fetch_assoc($login_qu_res);
     if (/*проверка пароля по ХЭШУ*/password_verify($password, $user['password'])) {
-      echo "успешный вход в лк";
-      // session_start();
-      // $_SESSION['email'] = $user['email'];
-      // header("Location: index.php");
+      //echo "успешный вход в лк";
+      session_start();
+      $_SESSION['email'] = $user['email'];
+      header("Location: lk.php");
     } else {
       echo "Неверный пароль.";
     }
